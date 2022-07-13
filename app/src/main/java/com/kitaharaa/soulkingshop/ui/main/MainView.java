@@ -1,4 +1,6 @@
 package com.kitaharaa.soulkingshop.ui.main;
 
-public interface MainView {
+import com.kitaharaa.soulkingshop.ui.base.BaseView;
+
+public interface MainView extends BaseView {
 }
