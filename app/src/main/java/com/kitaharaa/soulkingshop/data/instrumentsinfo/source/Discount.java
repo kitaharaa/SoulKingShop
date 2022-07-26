@@ -12,7 +12,7 @@ public class Discount {
 
     public int percent;
 
-    //public ... dateFrom
+    public long dateFrom;
 
-    //public ... dateTo
+    public long dateTo;
 }

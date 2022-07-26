@@ -1,8 +1,10 @@
 package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.database;
 
 import androidx.room.Database;
+import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import com.kitaharaa.soulkingshop.App;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Basket;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Category;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Discount;
@@ -36,4 +38,13 @@ public abstract class ShopDatabase extends RoomDatabase {
     public abstract DiscountDao discountDao();
     public abstract OrderDao orderDao();
     public abstract OrderItemDao orderItem();
+
+    private static ShopDatabase sInstance;
+
+    public static ShopDatabase getInstance() {
+        if (sInstance == null) {
+            sInstance = Room.databaseBuilder(App.getInstance(), ShopDatabase.class, "ShopDatabase.db").build();
+        }
+        return sInstance;
+    }
 }

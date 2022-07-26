@@ -10,7 +10,7 @@ public class Order {
 
     public int userId;
 
-    //public ... date;
+    public long date;
 
     public String name;
 
