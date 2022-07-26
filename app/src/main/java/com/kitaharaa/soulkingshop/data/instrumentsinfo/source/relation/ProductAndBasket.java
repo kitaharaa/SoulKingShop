@@ -1,0 +1,17 @@
+package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.relation;
+
+import androidx.room.Embedded;
+import androidx.room.Relation;
+
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Basket;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Product;
+
+public class ProductAndBasket {
+    @Embedded
+    public Product product;
+    @Relation(
+            parentColumn = "productId",
+            entityColumn = "productId"
+    )
+    public Basket basket;
+}
