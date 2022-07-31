@@ -3,6 +3,7 @@ package com.kitaharaa.soulkingshop.data.instrumentsinfo.source;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+/*Product details*/
 @Entity
 public class Product {
     @PrimaryKey
@@ -22,9 +23,9 @@ public class Product {
 
     public String material;
 
-    //public ... year;
+    public double year;
 
-    public byte photo;
+    public byte[] photo;
 
 
 }

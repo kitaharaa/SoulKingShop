@@ -3,12 +3,16 @@ package com.kitaharaa.soulkingshop.data.instrumentsinfo.source;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+/*Products which was added to basket*/
 @Entity
-public class UserProductView {
+public class BasketItem {
     @PrimaryKey
-    public int userProductViewId;
+    public int basketItemId;
 
-    public int userId;
+    public int basketId;
 
     public int productId;
+
+    public int quantity;
+
 }

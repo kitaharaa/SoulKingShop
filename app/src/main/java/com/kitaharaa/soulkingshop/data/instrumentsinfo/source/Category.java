@@ -3,6 +3,7 @@ package com.kitaharaa.soulkingshop.data.instrumentsinfo.source;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+/*Product category*/
 @Entity
 public class Category {
     @PrimaryKey

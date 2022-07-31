@@ -7,8 +7,7 @@ import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Basket;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.User;
 
 public class UserAndBasket {
-    @Embedded
-    public User user;
+    @Embedded public User user;
     @Relation(
             parentColumn = "userId",
             entityColumn = "userId"
