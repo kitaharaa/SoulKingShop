@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:tools="http://schemas.android.com/tools"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-tools:context=".ui.home.HomeFragment">
-
-<!-- TODO: Update blank fragment layout -->
-<TextView
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:text="@string/home" />
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
 
-</FrameLayout>
+    <FrameLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:background="@drawable/widget_background"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:paddingStart="40dp"
+            android:paddingBottom="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="235dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="195dp"
+                android:layout_height="195dp"
+                app:srcCompat="@drawable/soulking"
+                app:strokeWidth="2dp"
+                app:strokeColor="@android:color/black"
+                app:shapeAppearanceOverlay="@style/roundCorners" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
