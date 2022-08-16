@@ -1,18 +1,21 @@
 package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.database;
 
+import android.content.Context;
+import android.util.Log;
+
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
 import com.kitaharaa.soulkingshop.App;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Basket;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.BasketItem;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Category;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Discount;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Order;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.OrderItem;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Product;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.User;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Basket;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.BasketItem;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Category;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Discount;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Order;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.OrderItem;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Product;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.User;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.dao.BasketDao;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.dao.BasketItemDao;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.dao.CategoryDao;
@@ -36,10 +39,17 @@ public abstract class ShopDatabase extends RoomDatabase {
     public abstract OrderItemDao orderItem();
 
     private static ShopDatabase databaseInstance;
+    private static final Object LOCK = new Object();
+    private static final String DATABASE_NAME = "shop_database";
 
-    public ShopDatabase() {
+    public static ShopDatabase getInstance(Context context) {
         if (databaseInstance == null) {
-            databaseInstance = Room.databaseBuilder(App.getInstance(), ShopDatabase.class, "ShopDatabase.db").build();
+            synchronized (LOCK) {
+                databaseInstance = Room.databaseBuilder(context.getApplicationContext(),
+                        ShopDatabase.class, ShopDatabase.DATABASE_NAME).allowMainThreadQueries()
+                        .build();
+            }
         }
+        return databaseInstance;
     }
 }
