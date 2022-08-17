@@ -3,16 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.1" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_home.xml" value="0.176" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_homek.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_liked.xml" value="0.1" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_more.xml" value="0.1" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_search.xml" value="0.1" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_test.xml" value="0.1" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/drawable/widget_background.xml" value="0.175" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/activity_main.xml" value="0.176" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/store_banner.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>

@@ -8,6 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#CACACA</color>
-    <color name="start_widgetColor">#B89696</color>
-    <color name="end_widgetColor">#8C5959</color>
+
+    <color name="start_widgetColor">#A185BD</color>
+    <color name="end_widgetColor">#6B4C8A</color>
+
+    <color name="shadow_color">#272727</color>
 </resources>
