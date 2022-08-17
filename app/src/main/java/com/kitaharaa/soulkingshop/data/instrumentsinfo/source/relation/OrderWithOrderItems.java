@@ -3,8 +3,8 @@ package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.relation;
 import androidx.room.Embedded;
 import androidx.room.Relation;
 
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Order;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.OrderItem;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Order;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.OrderItem;
 
 import java.util.List;
 

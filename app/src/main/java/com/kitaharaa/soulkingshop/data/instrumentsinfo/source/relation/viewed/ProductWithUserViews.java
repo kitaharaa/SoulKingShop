@@ -4,8 +4,8 @@ import androidx.room.Embedded;
 import androidx.room.Junction;
 import androidx.room.Relation;
 
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.Product;
-import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.User;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.Product;
+import com.kitaharaa.soulkingshop.data.instrumentsinfo.User;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.source.relation.crossref.UserProductViewCrossRef;
 
 import java.util.List;

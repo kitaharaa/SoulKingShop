@@ -1,7 +1,6 @@
 package com.kitaharaa.soulkingshop.ui.main;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
@@ -13,7 +12,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
     @NonNull
     @Override
     protected MainPresenter createPresenter() {
-        return null;
+        return new MainPresenter(this);
     }
 
     @Override
