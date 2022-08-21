@@ -1,13 +1,11 @@
 package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.database;
 
 import android.content.Context;
-import android.util.Log;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
-import com.kitaharaa.soulkingshop.App;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.Basket;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.BasketItem;
 import com.kitaharaa.soulkingshop.data.instrumentsinfo.Category;
