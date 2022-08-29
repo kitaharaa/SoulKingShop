@@ -6,6 +6,6 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.kitaharaa.soulkingshop.ui.base.BaseView;
 
 public interface MainView extends BaseView {
-    void setNavigationViewListener(BottomNavigationView navigationView);
+    void setBottomNavigationViewListener(BottomNavigationView navigationView);
     void setFragment(Fragment fragment);
 }

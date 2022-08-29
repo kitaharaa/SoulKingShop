@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context=".ui.main.MainActivity">
 
-    <!--Store Banner-->
-    <include layout="@layout/store_banner"/>
+    <!-- Navigation View -->
+    <include layout="@layout/basket_nav"/>
 
-</LinearLayout>
+    <!-- Layout for content-->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--Store Banner-->
+        <include
+            layout="@layout/store_banner"/>
+
+        <TextView
+            android:id="@+id/fragment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- FAB-->
+        <include layout="@layout/basket_fab"/>
+
+    </FrameLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

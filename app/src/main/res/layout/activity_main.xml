@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".ui.main.MainActivity">
 
+    <!-- Frame for content -->
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
@@ -20,7 +21,6 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="0dp"
         android:background="@color/gray"
-        app:menu="@menu/bottom_nav_menu">
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+        app:menu="@menu/bottom_nav_menu" />
 
 </RelativeLayout>

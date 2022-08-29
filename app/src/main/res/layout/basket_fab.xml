@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Floating Action Button -->
+<com.google.android.material.floatingactionbutton.FloatingActionButton xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+    android:id="@+id/basket_fab"
+    android:src="@drawable/shopping_basket"
+    android:contentDescription="@string/fab_description"
+    android:layout_width="wrap_content"
+    android:layout_gravity="end|bottom"
+    app:rippleColor="@color/shadow_color"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp" />

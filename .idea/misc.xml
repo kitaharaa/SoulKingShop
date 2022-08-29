@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/drawable/widget_background.xml" value="0.175" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/activity_main.xml" value="0.176" />
-        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/drawable/shopping_basket-48px.xml" value="0.1615" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/drawable/shopping_basket.xml" value="0.175" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/activity_main.xml" value="0.152" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/basket_fab.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/basket_nav.xml" value="0.176" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/basket_nav_header.xml" value="0.12" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/fragment_home.xml" value="0.12" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/myBasket_fab.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/mybasket_fab.xml" value="0.264" />
         <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/layout/store_banner.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/menu/basket_menu_nav.xml" value="0.15208333333333332" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/menu/basket_nav_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/bvale/AndroidStudioProjects/SoulKingShop/app/src/main/res/menu/basket_nav_menu.xml" value="0.1125" />
       </map>
     </option>
   </component>

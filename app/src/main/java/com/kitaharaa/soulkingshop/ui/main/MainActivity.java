@@ -1,5 +1,7 @@
 package com.kitaharaa.soulkingshop.ui.main;
 
+import static androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_FADE;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
@@ -8,7 +10,9 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
+import com.kitaharaa.soulkingshop.App;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.ui.base.BaseActivity;
 import com.kitaharaa.soulkingshop.ui.home.HomeFragment;
@@ -17,8 +21,6 @@ import com.kitaharaa.soulkingshop.ui.more.MoreFragment;
 import com.kitaharaa.soulkingshop.ui.search.SearchFragment;
 
 public class MainActivity extends BaseActivity<MainPresenter> implements MainView{
-    BottomNavigationView navigationView;
-
     @NonNull
     @Override
     protected MainPresenter createPresenter() {
@@ -30,15 +32,14 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        navigationView = findViewById(R.id.bottomNavigationView);
-
-        setNavigationViewListener(navigationView);
-        navigationView.setSelectedItemId(R.id.home);
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+        setBottomNavigationViewListener(bottomNavigationView);
+        bottomNavigationView.setSelectedItemId(R.id.home);
     }
 
     @Override
-    public void setNavigationViewListener(BottomNavigationView navigationView) {
-        navigationView.setOnItemSelectedListener(
+    public void setBottomNavigationViewListener(BottomNavigationView bottomNavigationView) {
+        bottomNavigationView.setOnItemSelectedListener(
                 new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -65,6 +66,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
     public void setFragment(Fragment fragment) {
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.frameLayout, fragment);
+        fragmentTransaction.setTransition(TRANSIT_FRAGMENT_FADE);
         fragmentTransaction.commit();
     }
 }

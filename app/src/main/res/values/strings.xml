@@ -10,7 +10,9 @@
     <string name="soulKing_text">Soul King</string>
     <string name="shop_text">Shop</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="basket_title_text">Мій кошик</string>
+    <string name="fab_description">Мій кошик</string>
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
