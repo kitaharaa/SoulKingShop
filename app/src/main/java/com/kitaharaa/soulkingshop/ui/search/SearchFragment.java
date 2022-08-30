@@ -7,9 +7,12 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kitaharaa.soulkingshop.R;
+import com.kitaharaa.soulkingshop.listeners.FloatingActionButtonListener;
 
 public class SearchFragment extends Fragment {
+    View fragmentView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,15 @@ public class SearchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        fragmentView = inflater.inflate(R.layout.fragment_search, container, false);
+        return fragmentView;
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        FloatingActionButton basketFab = getView().findViewById(R.id.basket_fab);
+        basketFab.setOnClickListener(new FloatingActionButtonListener(fragmentView));
     }
 }

@@ -13,6 +13,6 @@
     <string name="basket_title_text">Мій кошик</string>
     <string name="fab_description">Мій кошик</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_view_hint">Я шукаю...</string>
 
 </resources>
