@@ -22,4 +22,13 @@
 
     <color name="underlining_color">#EE6B5D9A</color>
 
+    <color name="more_buttons_color">#70ADACAF</color>
+
+    <color name="recycler_view_item_color">#70ADACAF</color>
+
+    <color name="icon_color">#714983</color>
+    <color name="sales_icon_color">#8C2619</color>
+    <color name="manager_icon_color">#344A8C</color>
+    <color name="support_icon_color">#3C6A44</color>
+
 </resources>

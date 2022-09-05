@@ -15,4 +15,19 @@
 
     <string name="search_view_hint">Я шукаю...</string>
 
+    <string name="enter_button_text">Вхід</string>
+    <string name="registry_button_text">Реєстрація</string>
+
+    <string-array name="more_item_titles">
+        <item>Мої замовлення</item>
+        <item>Переглянуті товари</item>
+        <item>Мої повідомлення</item>
+        <item>Знижки</item>
+        <item>Режим менеджера</item>
+        <item>Служба підтримки</item>
+        <item>Інформація</item>
+    </string-array>
+
+    <string name="icon_description">Картинка категорії</string>
+
 </resources>
