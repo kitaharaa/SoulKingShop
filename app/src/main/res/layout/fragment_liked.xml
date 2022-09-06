@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.liked.LikedFragment">
+    tools:context=".ui.mainfragments.LikedFragment">
 
     <!-- NavigationView -->
     <include layout="@layout/basket_nav" />

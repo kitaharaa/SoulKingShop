@@ -1,4 +1,4 @@
-package com.kitaharaa.soulkingshop.ui.more;
+package com.kitaharaa.soulkingshop.ui.mainfragments;
 
 import android.os.Bundle;
 

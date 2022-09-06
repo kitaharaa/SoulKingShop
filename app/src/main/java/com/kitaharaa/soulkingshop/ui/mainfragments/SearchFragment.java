@@ -1,4 +1,4 @@
-package com.kitaharaa.soulkingshop.ui.liked;
+package com.kitaharaa.soulkingshop.ui.mainfragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,7 +11,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.listeners.FloatingActionButtonListener;
 
-public class LikedFragment extends Fragment {
+public class SearchFragment extends Fragment {
     View fragmentView;
 
     @Override
@@ -23,7 +23,7 @@ public class LikedFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        fragmentView = inflater.inflate(R.layout.fragment_liked, container, false);
+        fragmentView = inflater.inflate(R.layout.fragment_search, container, false);
         return fragmentView;
     }
 

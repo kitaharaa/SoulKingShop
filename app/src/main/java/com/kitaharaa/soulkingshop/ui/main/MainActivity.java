@@ -10,15 +10,13 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
-import com.kitaharaa.soulkingshop.App;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.ui.base.BaseActivity;
-import com.kitaharaa.soulkingshop.ui.home.HomeFragment;
-import com.kitaharaa.soulkingshop.ui.liked.LikedFragment;
-import com.kitaharaa.soulkingshop.ui.more.MoreFragment;
-import com.kitaharaa.soulkingshop.ui.search.SearchFragment;
+import com.kitaharaa.soulkingshop.ui.mainfragments.HomeFragment;
+import com.kitaharaa.soulkingshop.ui.mainfragments.LikedFragment;
+import com.kitaharaa.soulkingshop.ui.mainfragments.MoreFragment;
+import com.kitaharaa.soulkingshop.ui.mainfragments.SearchFragment;
 
 public class MainActivity extends BaseActivity<MainPresenter> implements MainView{
     @NonNull
