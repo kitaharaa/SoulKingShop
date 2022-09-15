@@ -1,4 +1,4 @@
-package com.kitaharaa.soulkingshop.ui.home;
+package com.kitaharaa.soulkingshop.ui.mainfragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +11,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.listeners.FloatingActionButtonListener;
 
+/*
+ * Display home page
+ */
 public class HomeFragment extends Fragment {
     View fragmentView;
 
@@ -24,7 +27,7 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         fragmentView = inflater.inflate(R.layout.fragment_home, container, false);
-        return  fragmentView;
+        return fragmentView;
     }
 
     @Override

@@ -29,5 +29,32 @@
     </string-array>
 
     <string name="icon_description">Картинка категорії</string>
+    <string name="title_activity_instrument">InstrumentActivity</string>
 
+    <string-array name="instrument_tab_names">
+        <item>Усе про товар</item>
+        <item>Характеристика</item>
+        <item>Відгуки</item>
+        <item>Питання</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="buy_button_text">Купити зараз</string>
+
+    <string name="product_full_description_button_text">Повний опис товару</string>
+
+    <string-array name="characteristic_column_names">
+        <item>Назва</item>
+        <item>Опис</item>
+        <item>Країна-виробник</item>
+        <item>Колір</item>
+        <item>Матеріал</item>
+        <item>Рік</item>
+    </string-array>
+
+    <string name="toolbar_title">Інформація про інструмент</string>
+
+    <string name="feedback_text">Відгуки будуть згодом...</string>
+    <string name="question_text">Запитання будуть згодом...</string>
 </resources>

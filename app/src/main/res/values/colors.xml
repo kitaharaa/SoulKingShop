@@ -9,6 +9,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#CACACA</color>
+    <color name="green">#326C3B</color>
 
     <color name="start_widgetColor">#A185BD</color>
     <color name="end_widgetColor">#6B4C8A</color>
@@ -30,5 +31,14 @@
     <color name="sales_icon_color">#8C2619</color>
     <color name="manager_icon_color">#344A8C</color>
     <color name="support_icon_color">#3C6A44</color>
+
+    <color name="favorite_radioButton">#8C2619</color>
+    <color name="basket_radioButton">#43704A</color>
+
+    <color name="buy_button_color">#4B834D</color>
+
+    <color name="characteristic_background_color">#A6A6A6</color>
+
+    <color name="toolbar_color">#5A3E75</color>
 
 </resources>
