@@ -18,7 +18,7 @@ import com.kitaharaa.soulkingshop.ui.mainfragments.LikedFragment;
 import com.kitaharaa.soulkingshop.ui.mainfragments.MoreFragment;
 import com.kitaharaa.soulkingshop.ui.mainfragments.SearchFragment;
 
-public class MainActivity extends BaseActivity<MainPresenter> implements MainView{
+public class MainActivity extends BaseActivity<MainPresenter> implements MainView {
     @NonNull
     @Override
     protected MainPresenter createPresenter() {
@@ -39,25 +39,25 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
     public void setBottomNavigationViewListener(BottomNavigationView bottomNavigationView) {
         bottomNavigationView.setOnItemSelectedListener(
                 new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                int id = item.getItemId();
-                if (id == R.id.home) {
-                    setFragment(new HomeFragment());
-                    return true;
-                } else if (id == R.id.search) {
-                    setFragment(new SearchFragment());
-                    return true;
-                } else if (id == R.id.liked) {
-                    setFragment(new LikedFragment());
-                    return true;
-                } else if (id == R.id.more) {
-                    setFragment(new MoreFragment());
-                    return true;
-                }
-                return false;
-            }
-        });
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        int id = item.getItemId();
+                        if (id == R.id.home) {
+                            setFragment(new HomeFragment());
+                            return true;
+                        } else if (id == R.id.search) {
+                            setFragment(new SearchFragment());
+                            return true;
+                        } else if (id == R.id.liked) {
+                            setFragment(new LikedFragment());
+                            return true;
+                        } else if (id == R.id.more) {
+                            setFragment(new MoreFragment());
+                            return true;
+                        }
+                        return false;
+                    }
+                });
     }
 
     @Override

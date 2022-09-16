@@ -1,7 +1,7 @@
 package com.kitaharaa.soulkingshop.ui.instrument;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.viewpager2.widget.ViewPager2;
 
@@ -11,8 +11,15 @@ import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.adapter.SectionsPagerAdapter;
+import com.kitaharaa.soulkingshop.ui.base.BaseActivity;
 
-public class InstrumentActivity extends AppCompatActivity {
+public class InstrumentActivity extends BaseActivity<InstrumentPresenter> implements InstrumentView {
+
+    @NonNull
+    @Override
+    protected InstrumentPresenter createPresenter() {
+        return null;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +29,8 @@ public class InstrumentActivity extends AppCompatActivity {
         manageToolbar();
     }
 
-    private void manageToolbar() {
+    @Override
+    public void manageToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(getResources().getString(R.string.toolbar_title));
         toolbar.setTitleTextColor(getResources().getColor(R.color.white));
