@@ -3,6 +3,7 @@ package com.kitaharaa.soulkingshop.ui.main;
 import static androidx.fragment.app.FragmentTransaction.TRANSIT_FRAGMENT_FADE;
 
 import androidx.annotation.NonNull;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -28,7 +29,7 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
     @NonNull
     @Override
     protected MainPresenter createPresenter() {
-        return null;
+        return new MainPresenter(this);
     }
 
     /* Set preferences depending on mode */

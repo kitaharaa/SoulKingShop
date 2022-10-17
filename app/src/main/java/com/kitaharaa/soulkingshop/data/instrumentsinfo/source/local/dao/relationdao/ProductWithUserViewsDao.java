@@ -3,5 +3,5 @@ package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.dao.relatio
 import androidx.room.Dao;
 
 @Dao
-public interface UserAndUserProductLikeDao {
+public interface ProductWithUserViewsDao {
 }

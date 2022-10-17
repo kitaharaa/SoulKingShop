@@ -3,8 +3,4 @@ package com.kitaharaa.soulkingshop.data.instrumentsinfo.source.local.dao.relatio
 import androidx.room.Dao;
 
 @Dao
-public interface UserAndBasketDao {
-    /*@Transaction //execute automatically
-    @Query("") //SQLite query
-    public int getUserId();*/
-}
+public interface UserAndBasketDao { }
