@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:color="?colorControlHighlight"> <!-- default ripple color -->
+<item>
+    <!-- the background shape when it's not being clicked -->
+    <shape android:shape="rectangle">
+        <corners
+            android:topRightRadius="0dp"
+            android:radius="30dp" />
+
+        <solid
+            android:color="@color/more_buttons_color" />
+
+        <size
+            android:height="@dimen/top_more_buttons_height"
+            android:width="@dimen/top_more_button_width"/>
+    </shape>
+</item>
+</ripple>

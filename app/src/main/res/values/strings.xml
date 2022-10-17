@@ -1,3 +1,80 @@
 <resources>
     <string name="app_name">SoulKing Shop</string>
+
+    <!--Tabs-->
+    <string name="home">Дім</string>
+    <string name="search">Пошук</string>
+    <string name="liked">Уподобані</string>
+    <string name="more">Ще</string>
+    <string name="add">Додати</string>
+
+    <string name="soulKing_text">Soul King</string>
+    <string name="shop_text">Shop</string>
+
+    <string name="basket_title_text">Мій кошик</string>
+    <string name="fab_description">Мій кошик</string>
+
+    <string name="search_view_hint">Я шукаю...</string>
+
+    <string name="enter_button_text">Вхід</string>
+    <string name="registry_button_text">Реєстрація</string>
+    <string name="exit_button_text">Вийти</string>
+
+    <string-array name="more_item_titles">
+        <item>Мої замовлення</item>
+        <item>Переглянуті товари</item>
+        <item>Мої повідомлення</item>
+        <item>Знижки</item>
+        <item>Режим менеджера</item>
+        <item>Служба підтримки</item>
+        <item>Інформація</item>
+    </string-array>
+
+    <string-array name="more_item_titles_manager_mode">
+        <item>Дійсні замовлення</item>
+        <item>Популярні товари</item>
+        <item>Відгуки</item>
+        <item>Керування знижками</item>
+        <item>Служба підтримки</item>
+    </string-array>
+
+    <string name="icon_description">Картинка категорії</string>
+    <string name="title_activity_instrument">InstrumentActivity</string>
+
+    <string-array name="instrument_tab_names">
+        <item>Усе про товар</item>
+        <item>Характеристика</item>
+        <item>Відгуки</item>
+        <item>Питання</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="buy_button_text">Купити зараз</string>
+
+    <string name="product_full_description_button_text">Повний опис товару</string>
+
+    <string-array name="characteristic_column_names">
+        <item>Назва</item>
+        <item>Опис</item>
+        <item>Країна-виробник</item>
+        <item>Колір</item>
+        <item>Матеріал</item>
+        <item>Рік</item>
+    </string-array>
+
+    <string name="toolbar_title">Інформація про інструмент</string>
+
+    <string name="feedback_text">Відгуки будуть згодом...</string>
+    <string name="question_text">Запитання будуть згодом...</string>
+
+    <string name="add_text">Додати новий товар</string>
+
+    <string name="name_hint">Назва</string>
+    <string name="price_hint">Ціна</string>
+    <string name="required_helper_text">"Обов'язково*"</string>
+    <string name="add_photo_text">Додати фото</string>
+
+    <string name="add_characteristic_text">Додати характеристику</string>
+    <string name="publish_product_text">Опублікувати</string>
 </resources>

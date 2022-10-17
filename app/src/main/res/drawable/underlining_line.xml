@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Element for underlining text by line -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp"/>
+            <gradient android:angle="135"
+                android:startColor="@color/underlining_color"
+                android:endColor="@color/underlining_color"/>
+            <stroke
+                android:width="1.5dp"
+                android:color="@color/black" />
+        </shape>
+    </item>
+</selector>

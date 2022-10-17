@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- BottomNavigationView items-->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="@string/search" />
+    <item
+        android:id="@+id/liked"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/liked" />
+    <item
+        android:id="@+id/more"
+        android:icon="@drawable/ic_baseline_room_preferences_24"
+        android:title="@string/more" />
+</menu>
