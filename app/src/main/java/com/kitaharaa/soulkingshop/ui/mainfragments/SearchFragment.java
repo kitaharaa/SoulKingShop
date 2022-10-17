@@ -11,8 +11,21 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.listeners.FloatingActionButtonListener;
 
+/*
+ * Fragment for searching essential instrument
+ */
 public class SearchFragment extends Fragment {
     View fragmentView;
+    private boolean isManagerMode = false;
+
+    /* Constructor without parameters */
+    public SearchFragment() {
+    }
+
+    /* Constructor with parameter */
+    public SearchFragment(boolean isManagerMode) {
+        this.isManagerMode = isManagerMode;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,7 +36,11 @@ public class SearchFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        fragmentView = inflater.inflate(R.layout.fragment_search, container, false);
+        if (isManagerMode) {
+            fragmentView = inflater.inflate(R.layout.fragment_search_manager_mode, container, false);
+        } else {
+            fragmentView = inflater.inflate(R.layout.fragment_search, container, false);
+        }
         return fragmentView;
     }
 
@@ -31,7 +48,11 @@ public class SearchFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        FloatingActionButton basketFab = getView().findViewById(R.id.basket_fab);
-        basketFab.setOnClickListener(new FloatingActionButtonListener(fragmentView));
+        if (isManagerMode) {
+            // Do some actions
+        } else {
+            FloatingActionButton basketFab = getView().findViewById(R.id.basket_fab);
+            basketFab.setOnClickListener(new FloatingActionButtonListener(fragmentView));
+        }
     }
 }

@@ -11,6 +11,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kitaharaa.soulkingshop.R;
 
+/*
+ *  Set adapter to product displayed characteristic
+ */
 public class CharacteristicRecyclerViewAdapter extends RecyclerView.Adapter<CharacteristicRecyclerViewAdapter.ViewHolder> {
     private final String[] linesName;
     private String[] linesDescription;

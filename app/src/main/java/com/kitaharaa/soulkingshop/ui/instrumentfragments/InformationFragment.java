@@ -16,6 +16,9 @@ import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.listeners.BuyButtonListener;
 import com.kitaharaa.soulkingshop.listeners.RadioButtonListener;
 
+/*
+ * Display chosen instrument
+ */
 public class InformationFragment extends Fragment {
     private View fragmentView;
     private static boolean isFavoriteChecked = false;

@@ -12,22 +12,20 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.kitaharaa.soulkingshop.R;
 
 /*
-* Class for setting data into RecyclerView in MoreFragment.class
-* */
+ * Class for setting data into RecyclerView in MoreFragment.class
+ */
 public class MoreRecyclerViewAdapter extends RecyclerView.Adapter<MoreRecyclerViewAdapter.ViewHolder> {
     private final String[] itemsTitle;
     private final int[] itemsIcon;
     static View.OnClickListener onItemClickListener;
 
-    /**
-     *
-     */
+    /* Set passed parameter */
     public MoreRecyclerViewAdapter(String[] itemsTitle, int[] itemsIcon) {
         this.itemsTitle = itemsTitle;
         this.itemsIcon = itemsIcon;
     }
 
-    /**
+    /*
      * Provide a reference to the type of views that you are using
      * (custom ViewHolder).
      */

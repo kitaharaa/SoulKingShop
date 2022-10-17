@@ -10,6 +10,9 @@ import com.kitaharaa.soulkingshop.ui.instrumentfragments.FeedbackFragment;
 import com.kitaharaa.soulkingshop.ui.instrumentfragments.InformationFragment;
 import com.kitaharaa.soulkingshop.ui.instrumentfragments.QuestionFragment;
 
+/*
+ * Bind fragments to TabLayout elements
+ */
 public class SectionsPagerAdapter extends FragmentStateAdapter {
     public SectionsPagerAdapter(FragmentManager fragmentManager,
                                 Lifecycle lifecycle) {
@@ -31,6 +34,7 @@ public class SectionsPagerAdapter extends FragmentStateAdapter {
         return null;
     }
 
+    /* Return item count */
     @Override
     public int getItemCount() {
         return 4;

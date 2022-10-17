@@ -41,4 +41,7 @@
 
     <color name="toolbar_color">#5A3E75</color>
 
+    <color name="helper_text_color">#9C2929</color>
+
+    <color name="add_characteristic_button_color">#714983</color>
 </resources>

@@ -8,7 +8,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import com.kitaharaa.soulkingshop.R;
 
 /*
-* FloatingActionButton listener implementations
+* FloatingActionButton listener
 */
 public class FloatingActionButtonListener implements View.OnClickListener {
     private DrawerLayout drawerLayout;

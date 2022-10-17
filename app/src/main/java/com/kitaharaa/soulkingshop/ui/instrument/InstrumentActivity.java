@@ -13,6 +13,9 @@ import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.adapter.SectionsPagerAdapter;
 import com.kitaharaa.soulkingshop.ui.base.BaseActivity;
 
+/*
+ * Contains instrument information
+ */
 public class InstrumentActivity extends BaseActivity<InstrumentPresenter> implements InstrumentView {
 
     @NonNull

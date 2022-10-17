@@ -16,6 +16,16 @@ import com.kitaharaa.soulkingshop.listeners.FloatingActionButtonListener;
  */
 public class HomeFragment extends Fragment {
     View fragmentView;
+    private static boolean isManagerMode = false;
+
+    /* Constructor without parameter */
+    public HomeFragment() {
+    }
+
+    /* Pass value to isManagerMode */
+    public HomeFragment(boolean isManagerMode) {
+        this.isManagerMode = isManagerMode;
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -26,7 +36,11 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        fragmentView = inflater.inflate(R.layout.fragment_home, container, false);
+        if (isManagerMode) {
+            fragmentView = inflater.inflate(R.layout.fragment_home_manager_mode, container, false);
+        } else {
+            fragmentView = inflater.inflate(R.layout.fragment_home, container, false);
+        }
         return fragmentView;
     }
 
@@ -34,7 +48,11 @@ public class HomeFragment extends Fragment {
     public void onStart() {
         super.onStart();
 
-        FloatingActionButton basketFab = getView().findViewById(R.id.basket_fab);
-        basketFab.setOnClickListener(new FloatingActionButtonListener(fragmentView));
+        if (isManagerMode) {
+            // Do some actions
+        } else {
+            FloatingActionButton basketFab = getView().findViewById(R.id.basket_fab);
+            basketFab.setOnClickListener(new FloatingActionButtonListener(fragmentView));
+        }
     }
 }

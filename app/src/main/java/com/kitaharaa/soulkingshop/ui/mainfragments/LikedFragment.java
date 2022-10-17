@@ -11,6 +11,9 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.kitaharaa.soulkingshop.R;
 import com.kitaharaa.soulkingshop.listeners.FloatingActionButtonListener;
 
+/*
+ * Display liked instrument
+ */
 public class LikedFragment extends Fragment {
     View fragmentView;
 
@@ -27,6 +30,7 @@ public class LikedFragment extends Fragment {
         return fragmentView;
     }
 
+    // FAB preferences
     @Override
     public void onStart() {
         super.onStart();
