@@ -4,10 +4,12 @@ There are two types of users: managers and clients. Depending on the type a diff
 
 ## 👨‍💻 Tech Stack
 * Java
+* Android studio
 * Android SDK (Debugger, emulator, ADB)
-* Adnroid Jetpack (SQLite, Room)
+* Android Jetpack
+* SQLite, Room
 
-## 📱 UI
+## 📱 User Interface
 ![](home_page.png)
 
 ![](instrument_information.png)
