@@ -5,6 +5,7 @@ There are two types of users: managers and clients. Depending on the type a diff
 ## 👨‍💻 Tech Stack
 * Java
 * Android SDK (Debugger, emulator, ADB)
+* Adnroid Jetpack (SQLite, Room)
 
 ## 📱 UI
 ![](home_page.png)
